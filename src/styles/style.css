@@ -1,0 +1,21 @@
+.right{
+  float:right;
+}
+.left{
+  float:left;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+/*a:hover{*/
+  /*color:#2E8799;*/
+/*}*/
+[class^="ali-icon"],[class*="ali-icon"] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
