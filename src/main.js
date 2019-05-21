@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import uploader from 'vue-simple-uploader'
+
 import 'normalize.css/normalize.css'
 
 import ElementUI from 'element-ui'
@@ -16,6 +18,7 @@ import '@/styles/style.css'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI, { locale })
+Vue.use(uploader)
 
 /* eslint-disable no-new */
 new Vue({

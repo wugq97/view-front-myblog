@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
+import { Message } from 'element-ui'
 import { getToken } from '@/utils/auth'
 
 // 创建axios实例
@@ -39,20 +39,7 @@ service.interceptors.response.use(
           type: 'error',
           duration: 5 * 1000
         })
-
-        if (res.code === 10010) {
-          MessageBox.confirm(
-            '你已被登出，可以取消继续留在该页面，或者重新登录',
-            '确定登出',
-            {
-              confirmButtonText: '重新登录',
-              cancelButtonText: '取消',
-              type: 'warning'
-            }
-          ).then(() => {
-            window.location.href = `/login?redirect=${window.location.href}` // 否则全部重定向到登录页
-          })
-        }
+        // window.location.href = `/login`
         return Promise.reject(res)
       } else {
         return res

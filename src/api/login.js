@@ -25,7 +25,7 @@ export function logout () {
   })
 }
 
-export function logon(user) {
+export function logon (user) {
   return request({
     url: '/user/logon',
     method: 'post',

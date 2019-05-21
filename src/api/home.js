@@ -152,7 +152,7 @@ export function updatePassword (id, oldPassword, newPassword) {
   })
 }
 
-export function getCategoryByArticle(id) {
+export function getCategoryByArticle (id) {
   return request({
     url: '/front/article/category',
     method: 'get',

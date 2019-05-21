@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import user from './modules/user'
 import style from './modules/style'
+import chat from './modules/chat'
 import getters from './getters'
 
 Vue.use(Vuex)
@@ -9,7 +10,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   modules: {
     user,
-    style
+    style,
+    chat
   },
   getters
 })
