@@ -328,7 +328,7 @@ export default {
   display: inline-block;
   padding: 0 15px;
   position: relative;
-  width:90px;
+  min-width:90px;
 }
 .class .forSub{
   color:#1874CD;
@@ -342,7 +342,7 @@ export default {
   background-color: #1D2124;
 }
 .subCategories{
-  width:90px;
+  width:100%;
   color: black;
   position:absolute;
   top: 60px;

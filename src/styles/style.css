@@ -19,3 +19,8 @@ ul{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+pre{
+  white-space: pre-wrap!important;
+  word-wrap: break-word!important;
+  *white-space:normal!important;
+}

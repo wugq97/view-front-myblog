@@ -61,7 +61,7 @@ img{
 .name{
   position: absolute;
   bottom: 30px;
-  margin-left: -20px;
+  left: 40%;
   color:white;
 }
 .swiper-pagination{

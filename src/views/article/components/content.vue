@@ -1,7 +1,7 @@
 <template>
   <div class="article-container">
     <div class="title" v-text="article.title"></div>
-    <div class="content" v-html="article.content"></div>
+    <div class="content" v-html="decodeURIComponent(article.content)"></div>
     <div class="article-bottom">
       <span class="view"><i class="el-icon-view" style="margin-right:5px;"/>{{ article.views }}</span>
       <span class="like" @click="addLikes"><i class="ali-icon-zan" :class="{hasLike:hasLike}" style="margin-right:5px;"/>{{ article.likes }}</span>
@@ -102,6 +102,7 @@ export default {
 .content{
   text-align: left;
   margin-bottom: 50px;
+  word-wrap:break-word;
 }
 .article-bottom{
   position: absolute;

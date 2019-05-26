@@ -81,6 +81,7 @@ export default {
 }
 .classB .information{
   margin-top:20px;
+  width:28%;
   float: right;
 }
 .classC .information{
